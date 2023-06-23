@@ -96,6 +96,7 @@
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <p>Social Media Developer -></p>
             <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/harikatod"
                     target="_blank">Twitter<svg class="bi" width="24" height="24">
                         <use xlink:href="#twitter"></use>
