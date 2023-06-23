@@ -12,7 +12,7 @@ class LoginController extends Controller
     public function redirectTo()
     {
         if (Auth::user()->role == 'admin') {
-            $this->redirectTo == route('barang.index');
+            $this->redirectTo == route('homepage');
             return $this->redirectTo;
         } else {
             $this->redirectTo = route('homepage', Auth::user()->id);
