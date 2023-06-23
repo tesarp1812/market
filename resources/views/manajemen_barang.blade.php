@@ -17,6 +17,9 @@
                     <td>{{ $b->name }}</td>
                     <td>{{ $b->jumlah }}</td>
                     <td>Rp {{ $b->harga }}</td>
+                    <td class="text-center">
+                        <img src="{{ asset('storage/barang/' . $b->gambar) }}" class="rounded" style="width: 150px">
+                    </td>
                     <td>
                         <ul class="nav">
                             <a class="btn btn-primary" href="{{ route('barang.edit', $b->id) }}" role="button">Edit</a>

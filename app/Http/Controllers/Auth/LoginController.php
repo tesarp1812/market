@@ -11,13 +11,13 @@ class LoginController extends Controller
 {
     public function redirectTo()
     {
-        if (Auth::user()->role == 'admin') {
-            $this->redirectTo == route('homepage');
-            return $this->redirectTo;
-        } else {
-            $this->redirectTo = route('homepage', Auth::user()->id);
-            return $this->redirectTo;
-        }
+        // if (Auth::user()->role == 'admin') {
+        //     $this->redirectTo == route('manajemen_barang');
+        //     return $this->redirectTo;
+        // } else {
+        //     $this->redirectTo = route('homepage', Auth::user()->id);
+        //     return $this->redirectTo;
+        // }
     }
 
     use AuthenticatesUsers;

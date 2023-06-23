@@ -32,11 +32,21 @@ class BarangController extends Controller
      */
     public function store(Request $request)
     {
+        //validate the request
+        // $this->validate($request, [
+        //     'image'     => 'required|image|mimes:jpeg,jpg,png|max:2048',
+        // ]);
+
+        //upload gambar
+        $filename = time() . '.png';
+        $request->file('gambar')->storeAs('/public/barang', $filename);
+        // dd('done!');
         //
         Barang::create([
             'name' => $request->name,
             'jumlah' => $request->jumlah,
-            'harga' => $request->harga
+            'harga' => $request->harga,
+            'gambar' => $filename
         ]);
 
         return redirect()->route('barang.index');

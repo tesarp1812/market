@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    test
+                    Sandang Store
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,13 +35,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li>
-                            <a href="{{ 'homepage' }}" class="nav-link">Home</a>
+                            <a href="{{ 'home' }}" class="nav-link">Home</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link">Product</a>
+                            <a href="{{ 'catalog' }}" class="nav-link">catalog</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link">About</a>
+                            <a href="{{ 'about' }}" class="nav-link">Tentang Kami</a>
                         </li>
                         @can('isAdmin')
                             <li>

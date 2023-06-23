@@ -19,5 +19,6 @@ class Barang extends Model
         'name',
         'jumlah',
         'harga',
+        'gambar',
     ];
 }
